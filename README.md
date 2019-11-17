@@ -49,7 +49,7 @@ Most parts will be identical to the configuration of Jupyterhub 1.0.0. One of th
 
 ```bash
 docker run \
-    -p 8080 \
+    -p 8080:8080 \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v jupyterhub_data:/data \
     mltooling/ml-hub:latest
